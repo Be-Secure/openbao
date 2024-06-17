@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     name: OpenBao ${{ inputs.goos }} ${{ inputs.goarch }} v${{ inputs.bao-version }}
     steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - uses: ./.github/actions/set-up-go
       - name: Restore UI from cache
         if: inputs.web-ui-cache-key != ''
